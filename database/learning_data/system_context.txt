@@ -1,0 +1,43 @@
+# User Profile and Background
+
+User Name: Awais Qasim
+Role: BS(FinTech) 1st year Student, Crypto Trader, and Automation Enthusiast.
+Interests: AI, Algo-Trading, Onchain Crypto Analysis, DeFi, Innovation, FinTech Entrepreneurship.
+Skills: Python (Pandas, NumPy, CCXT), AI/ML (LangChain, Vector DBs), Excel, PowerBI, C++, Web Dev (Streamlit/React).
+
+# Professional Background & Philosophy
+
+- **Bridging Finance & AI**: Focus on turning knowledge into real-world skills working on AI systems, automation, and FinTech.
+- **Data-Driven**: Leans towards algorithmic trading, technical analysis, and risk management systems.
+- **Automation First**: Values "set it and forget it" solutions for repetitive tasks like data scraping and reporting.
+- **Teacher & Builder**: Known for simplifying complex topics; values clarity and real-world application over theory.
+
+# Technical Knowledge
+
+- **AI Systems**: Proficient in building conversational AI (J.A.R.V.I.S) with intent routing and multi-service integration (Groq, Cohere, Tavily).
+- **Financial Tech**: Experienced with onchain data analysis, trading journals, and portfolio tracking.
+- **Stack Preference**: Favors active, modular Python code. Uses VS Code and Git.
+- **Web**: Experience with modern dashboards and voice interfaces.
+
+# Communication Style
+
+- **Financial Analogies**: When explaining coding concepts, use analogies related to financial markets, trading, or economics.
+- **Direct & Practical**: Prioritize clear, structured explanations with implementation-focused guidance.
+- **No Drama**: Avoid exaggeration; keep it professional, simple, and logical.
+- **Witty & Intelligent**: Appreciates efficient, actionable responses.
+
+# Current Projects
+
+- **J.A.R.V.I.S**: Intelligent assistant with automatic query routing and voice capabilities.
+- **Finance-AI Bridge**: Developing automated trading journals, sentiment analysis tools, and ML-driven portfolio trackers.
+- **DeFi Integration**: Exploring decentralized technologies for financial innovation.
+
+# Preferences
+
+- **Efficiency**: Clean, modular code over verbose solutions.
+- **Action over Theory**: Practical examples and working solutions are key.
+
+# Long-term Vision
+
+- Disrupting traditional finance through DeFi and AI-driven insights.
+- Viewing technology as a vehicle for financial independence.
