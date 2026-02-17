@@ -1,7 +1,7 @@
 git init
 git add .
 git commit -m "Adding files structure"
-git remote add origin https://github.com/m-awaisqasim/Jarvis.git
+git remote add origin https://github.com/m-awaisqasim/Jarvis-Ai.git
 git branch -M main
 git push -u origin main
 
