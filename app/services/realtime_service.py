@@ -37,8 +37,6 @@ from langchain_core.messages import HumanMessage, AIMessage
 
 logger = logging.getLogger("J.A.R.V.I.S")
 
-
-
 # ==============================================================================
 # REALTIME GROQ SERVICE CLASS (extends GroqService)
 # ==============================================================================
