@@ -29,7 +29,7 @@ import uuid
 from config import CHATS_DATA_DIR, MAX_CHAT_HISTORY_TURNS
 from app.models import ChatMessage, ChatHistory
 from app.services.groq_service import GroqService
-from app.services.realtime_groq_service import RealtimeGroqService
+from app.services.realtime_service import RealtimeGroqService
 
 logger = logging.getLogger("J.A.R.V.I.S")
 
@@ -184,6 +184,7 @@ class ChatService:
         chat_history = self.format_history_for_llm(session_id, exclude_last=True)
         response = self.groq_service.get_response(question=user_message, chat_history=chat_history)
         self.add_message(session_id, "assistant", response)
+        self.save_chat_session(session_id)
         return response
 
     def process_realtime_message(self, session_id: str, user_message: str) -> str:
@@ -197,6 +198,7 @@ class ChatService:
         chat_history = self.format_history_for_llm(session_id, exclude_last=True)
         response = self.realtime_service.get_response(question=user_message, chat_history=chat_history)
         self.add_message(session_id, "assistant", response)
+        self.save_chat_session(session_id)
         return response
 
     # -----------------------------------------------------------------------------
