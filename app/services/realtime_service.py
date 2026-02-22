@@ -161,7 +161,7 @@ class RealtimeGroqService(GroqService):
             return response_content
 
         except Exception as e:
-            logger.error(f"Error in response get_response: {e}, exc_info=True")
+            logger.error(f"Error in response get_response: {e}", exc_info=True)
             # Re-raise to main.py can return 429 (rate limit) or 500 consistent with general chat
             raise
         

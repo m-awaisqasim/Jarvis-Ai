@@ -41,7 +41,7 @@ from config import GROQ_API_KEYS, GROQ_MODEL, JARVIS_SYSTEM_PROMPT
 from app.services.vector_store import VectorStoreService
 from app.utils.time_info import get_time_information
 
-logger = logging.getLogger("J.A.R.V.I.S.")
+logger = logging.getLogger("J.A.R.V.I.S")
 
 
 # ==============================================================================
