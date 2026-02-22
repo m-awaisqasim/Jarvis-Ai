@@ -1,0 +1,13 @@
+{
+  "session_id": "05bba0d4-8f7d-4e08-901d-9e1b96c73206",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Who are you and who am I?"
+    },
+    {
+      "role": "assistant",
+      "content": "I am Jarvis, your sophisticated AI assistant. You are Awais Qasim, a 17-year-old BS(FinTech) 1st year Student, Crypto Trader, and FinTech Enthusiast."
+    }
+  ]
+}
