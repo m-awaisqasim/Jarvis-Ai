@@ -27,6 +27,7 @@ STARTUP:
   it saves all in-memory sessions to disk.
 """
 
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
@@ -47,12 +48,14 @@ def _is_rate_limit_error(exc: Exception) -> bool:
     msg = str(exc).lower()
     return "429" in str(exc) or "rate limit" in msg or "tokens per day" in msg
 
+
 from app.services.vector_store import VectorStoreService
 from app.services.groq_service import GroqService
 from app.services.realtime_service import RealtimeGroqService
 from app.services.chat_service import ChatService
 from config import VECTOR_STORE_DIR
 from langchain_community.vectorstores import FAISS
+
 
 # -----------------------------------------------------------------------------
 # LOGGING
@@ -63,6 +66,7 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 logger = logging.getLogger("J.A.R.V.I.S")
+
 
 # -----------------------------------------------------------------------------
 # GLOBAL SERVICE REFERENCES
@@ -86,17 +90,13 @@ def print_title():
     RESET   = "\033[0m"
 
     banner = f"""
-{DIM}{CYAN}    ╔══════════════════════════════════════════════════════════╗
-    ║                                                          ║{RESET}
-    {BOLD}{CYAN}║      ██╗ █████╗ ██████╗ ██╗   ██╗██╗███████╗            ║
-    {BLUE}║      ██║██╔══██╗██╔══██╗██║   ██║██║██╔════╝            ║
-    {BLUE}║      ██║███████║██████╔╝██║   ██║██║███████╗            ║
-    {MAGENTA}║ ██   ██║██╔══██║██╔══██╗╚██╗ ██╔╝██║╚════██║            ║
-    {MAGENTA}║ ╚█████╔╝██║  ██║██║  ██║ ╚████╔╝ ██║███████║            ║
-    {DIM}{CYAN}║  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚══════╝            ║{RESET}
-    {DIM}{CYAN}║                                                          ║
-    ║  {WHITE}{BOLD}Just A Rather Very Intelligent System{RESET}{DIM}{CYAN}                  ║
-    ╠══════════════════════════════════════════════════════════╣    
+{BOLD}{CYAN}      ██╗ █████╗ ██████╗ ██╗   ██╗██╗███████╗
+{BLUE}      ██║██╔══██╗██╔══██╗██║   ██║██║██╔════╝
+{BLUE}      ██║███████║██████╔╝██║   ██║██║███████╗
+{MAGENTA} ██   ██║██╔══██║██╔══██╗╚██╗ ██╔╝██║╚════██║
+{MAGENTA} ╚█████╔╝██║  ██║██║  ██║ ╚████╔╝ ██║███████║
+{DIM}{CYAN}  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚══════╝{RESET}
+      {WHITE}{BOLD}Just A Rather Very Intelligent System{RESET}
 """
     print(banner)
 
